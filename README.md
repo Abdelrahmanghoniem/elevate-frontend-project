@@ -53,7 +53,7 @@ This will start the development server at http://localhost:3000.
 Deployment
 This project is deployed on Vercel. You can view the live version by visiting the following URL:
 
-https://your-project-name.vercel.app
+https://elevate-frontend-project.vercel.app/#app-bar-with-responsive-menu
 
 Folder Structure
 src/: Contains all the source code files.
