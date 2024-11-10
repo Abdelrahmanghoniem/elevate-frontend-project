@@ -21,8 +21,8 @@ This is a simple e-commerce product listing page built using **React** and style
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/e-commerce-product-listing.git
-   cd e-commerce-product-listing
+   git clone https://github.com/Abdelrahmanghoniem/elevate-frontend-project/tree/main
+ 
    
 Install dependencies:
 
