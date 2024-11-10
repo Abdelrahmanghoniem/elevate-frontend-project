@@ -1,50 +1,75 @@
-# React + TypeScript + Vite
+# E-commerce Product Listing
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple e-commerce product listing page built using **React** and styled with **Material-UI**. It fetches product data from the [Fake Store API](https://fakestoreapi.com) and displays the products in a responsive grid layout.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Responsive Design**: The page adapts to various screen sizes using Material-UI's Grid system.
+- **Product Listings**: Displays a list of products fetched from the Fake Store API, including the product image, title, and price.
+- **Error Handling**: In case of an error during the data fetch, an error message is shown.
+- **Navbar**: A responsive navigation bar is included, providing links to the main pages of the site (e.g., Products, Pricing, Blog).
+- **User Avatar**: A user avatar icon is included in the Navbar, providing access to settings.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**: A JavaScript library for building user interfaces.
+- **Material-UI**: A popular React UI framework for building fast, modern websites and applications.
+- **Fake Store API**: An API that provides a list of products for use in the project.
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. **Clone the repository**:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+   ```bash
+   git clone https://github.com/your-username/e-commerce-product-listing.git
+   cd e-commerce-product-listing
+   
+Install dependencies:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Using npm:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+bash
+Copy code
+npm install
+Or using yarn:
+
+bash
+Copy code
+yarn install
+Run the development server:
+
+Using npm:
+
+bash
+Copy code
+npm start
+Or using yarn:
+
+bash
+Copy code
+yarn start
+This will start the development server at http://localhost:3000.
+
+Deployment
+This project is deployed on Vercel. You can view the live version by visiting the following URL:
+
+https://your-project-name.vercel.app
+
+Folder Structure
+src/: Contains all the source code files.
+components/: Contains reusable components like ProductCard.
+types/: Contains TypeScript type definitions.
+constants/: Contains constants like BASE_URL for the API.
+public/: Contains static assets like the index.html file.
+Contributing
+Fork the repository.
+Create your feature branch (git checkout -b feature-name).
+Commit your changes (git commit -m 'Add feature').
+Push to the branch (git push origin feature-name).
+Open a pull request.
+License
+This project is open-source and available under the MIT License.
+
+Acknowledgements
+Material-UI for the design system and UI components.
+Fake Store API for providing the product data used in the project.
