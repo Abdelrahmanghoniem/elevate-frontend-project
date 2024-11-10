@@ -34,7 +34,7 @@ const HomePage = () => {
     
     <Container sx={{ mt: 2 }}>
         <div style={{marginTop:'60px'}}/>  {/* Add space above the product cards */}
-      <Grid2 container spacing={2}>
+      <Grid2 container spacing={4}>
         {products.map((p) => (
           <Grid2 size={{xs:12, sm:5, md:4}}  >
             <ProductCard {...p} />
